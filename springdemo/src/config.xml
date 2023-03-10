@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	<bean id="l" class="com.springdemo2.Laptop" autowire="byType">
+	</bean>
+	<bean id="ch" class="com.springdemo2.Charger">
+		<property name="brand">
+			<value>lenovo</value>
+		</property>
+
+		<property name="power">
+			<value>60.5f</value>
+		</property>
+	</bean>
+
+
+
+</beans>
